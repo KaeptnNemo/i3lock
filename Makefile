@@ -43,6 +43,7 @@ install: all
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/i3lock
+	rm -f $(DESTDIR)$(SYSCONFDIR)/pam.d/i3lock
 
 dist: clean
 	[ ! -d i3lock-${VERSION} ] || rm -rf i3lock-${VERSION}

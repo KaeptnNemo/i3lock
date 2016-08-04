@@ -40,6 +40,7 @@ install: all
 	$(INSTALL) -d $(DESTDIR)$(SYSCONFDIR)/pam.d
 	$(INSTALL) -m 755 i3lock $(DESTDIR)$(PREFIX)/bin/i3lock
 	$(INSTALL) -m 644 i3lock.pam $(DESTDIR)$(SYSCONFDIR)/pam.d/i3lock
+	$(INSTALL) -m 755 i3lock.1 $(DESTDIR)$(PREFIX)/share/man/man1/
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/i3lock
